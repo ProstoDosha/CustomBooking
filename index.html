@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050f2a">
+  <title>Бронирование переговорной</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="./libs/gsap/gsap.min.js" defer></script>
+  <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+  <script src="./js/app.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header>
+        <div class="main-page">
+          <div class="main-header">
+            <img class="logo" src="./images/VK_logo.svg"></img>
+            <div class="caption-text">ВКОНТАКТЕ</div>
+          </div>
+          <div class="layer layers__middle" style="background-image: url(./images/background-middle.png);"></div> 
+          <div class="layer layers__front" style="background-image: url(./images/background-front.png);"></div>
+        </div>
+      </header>
+
+      <div class="main-unit" style="background-image: url(./images/background-towers.png);">
+        <div class="desk">
+          <div class="desk-main__text">Бронирования переговорной</div>
+          <div class="lists">
+            <div class="select">
+              <div class="select__header">
+                <span class="select__current">Выбор башни</span>
+                 <div class="select__icon">&times;</div>
+              </div>
+              <div class="select__body">
+                <div class="select__items">А</div>
+                <div class="select__items">Б</div>
+              </div>
+            </div>
+            <div class="select">
+              <div class="select__header">
+                <div class="select__current floor">Выбор этажа</div>
+                <div class="select__icon">&times;</div>
+              </div>
+              <div class="select__body">
+                <div class="select__items">3</div>
+                <div class="select__items">4</div>
+                <div class="select__items">5</div>
+                <div class="select__items">6</div>
+                <div class="select__items">7</div>
+                <div class="select__items">8</div>
+                <div class="select__items">9</div>
+                <div class="select__items">10</div>
+                <div class="select__items">11</div>
+                <div class="select__items">12</div>
+                <div class="select__items">13</div>
+                <div class="select__items">14</div>
+                <div class="select__items">15</div>
+                <div class="select__items">16</div>
+                <div class="select__items">17</div>
+                <div class="select__items">18</div>
+                <div class="select__items">19</div>
+                <div class="select__items">20</div>
+                <div class="select__items">21</div>
+                <div class="select__items">22</div>
+                <div class="select__items">23</div>
+                <div class="select__items">24</div>
+                <div class="select__items">25</div>
+                <div class="select__items">26</div>
+                <div class="select__items">27</div>
+              </div>
+            </div>
+            <div class="select">
+              <div class="select__header">
+                <div class="room select__current">Выбор  переговорной</div>
+                <div class="select__icon">&times;</div>
+              </div>
+              <div class="select__body">
+                <div class="select__items">1</div>
+                <div class="select__items">2</div>
+                <div class="select__items">3</div>
+                <div class="select__items">4</div>
+                <div class="select__items">5</div>
+                <div class="select__items">6</div>
+                <div class="select__items">7</div>
+                <div class="select__items">8</div>
+                <div class="select__items">9</div>
+                <div class="select__items">10</div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="times">
+            <div class="left_block">
+              <div class="data">
+                <p class="text__data">Дата:</p>
+                <input type="date" class="select__header calendar" id="calendar" name="calendar" max="2024-05-05" min="10-05-05">
+              </div>
+              <div class="oclock">
+                <p class="text__oclock">Время:</p>
+                <input type="time" class="select__header time" name="cron" value="07:00" min="07:00" max="23:00">
+              </div>
+            </div>
+            <div class="select__header right_block">
+              <textarea class="comment" maxlength="150" placeholder="Комментарий"></textarea>
+            </div>
+          </div>
+            
+          <div class="buttons">
+            <button id="clean"class="select__header buttons clean" onclick="clean()">Очистить</button>
+            <button id="send" class="select__header buttons send" onclick="send()">Отправить</button>
+          </div>
+        </div>
+        <div class="copy">© OOO "Brother"</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
